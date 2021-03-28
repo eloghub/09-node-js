@@ -28,7 +28,9 @@ SO THAT I can quickly create a professional README for a new project
 
 ## NOTES/CHALLENGES:
 
-+ 
++ line 2 (JS) - [inquirer](https://www.npmjs.com/package/inquirer#objects) was referenced so the user can input information
+
++ line 4 (JS) - [fs](https://nodejs.org/api/fs.html) was also referenced
 
 
 ### WALKTHROUGH VIDEO:
