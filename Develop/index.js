@@ -2,9 +2,9 @@
 const inquirer = require("inquirer")
 const generateMarkdown = require(`./utils/generateMarkdown`)
 const fs = require("fs");
+const license = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
 
 // TODO: Create an array of questions for user input
-// const questions = ["Description", "Table of Contents", "Installation", "Usage", "License", "Contributing", "Tests", "Questions"];
 const questions = [{
     type: "input",
     name: "githubUserName",
@@ -55,7 +55,6 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then(data => {
-        // console.log(data)
         var template = generateMarkdown(data)
         writeToFile("README.md", template)
         console.log(template)
